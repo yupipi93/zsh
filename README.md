@@ -21,6 +21,11 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 ```
 ### Nota: Este script ejecutará automáticamente la configuración de Oh-My-Zsh.
 
+## Configurar los plugins en .zshrc
+```bash
+echo "plugins=(git z zsh-syntax-highlighting zsh-autosuggestions docker sudo web-search copyfile jsontools)" >> ~/.zshrc &&
+```
+
 ## [Opcional] Descargar las fuentes Meslo Nerd Font
 ### Nota: Después de instalar las fuentes, configura tu terminal para usar 'MesloLGS NF' como la fuente por defecto.
 ```bash
@@ -36,23 +41,18 @@ fc-cache -f -v
 ```bash
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
-## Configurar Powerlevel10k
-```bash
-p10k configure
-```
-### Nota: Este comando inicia un proceso interactivo. Sigue las instrucciones en pantalla para personalizar tu prompt.
-
-## Configurar los plugins en .zshrc
-```bash
-echo "plugins=(git z zsh-syntax-highlighting zsh-autosuggestions docker sudo web-search copyfile jsontools)" >> ~/.zshrc &&
-```
 ## Añadir powerlevel10k como tema
 ```bash
 sed -i '/ZSH_THEME=/c\ZSH_THEME="powerlevel10k/powerlevel10k"' ~/.zshrc
 ```
 ## Recargar la configuración de Zsh
+### Nota: Este comando inicia un proceso interactivo. Sigue las instrucciones en pantalla para personalizar tu prompt.
 ```bash
 source ~/.zshrc
+```
+## Puedes volver a configurar Powerlevel10k con este comando
+```bash
+p10k configure
 ```
 ### Nota: Este comando aplica los cambios realizados en .zshrc sin necesidad de reiniciar la terminal.
 
