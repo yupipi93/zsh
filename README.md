@@ -44,11 +44,12 @@ p10k configure
 
 ## Configurar los plugins en .zshrc
 ```bash
-echo "plugins=(git z zsh-syntax-highlighting zsh-autosuggestions docker sudo web-search copyfile jsontools)" >> ~/.zshrc && \
- sed -i '/ZSH_THEME=/c\ZSH_THEME="powerlevel10k/powerlevel10k"' ~/.zshrc
-
+echo "plugins=(git z zsh-syntax-highlighting zsh-autosuggestions docker sudo web-search copyfile jsontools)" >> ~/.zshrc &&
 ```
-
+## Añadir powerlevel10k como tema
+```bash
+sed -i '/ZSH_THEME=/c\ZSH_THEME="powerlevel10k/powerlevel10k"' ~/.zshrc
+```
 ## Recargar la configuración de Zsh
 ```bash
 source ~/.zshrc
