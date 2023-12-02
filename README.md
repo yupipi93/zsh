@@ -23,7 +23,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 ## Configurar los plugins en .zshrc
 ```bash
-echo "plugins=(git z zsh-syntax-highlighting zsh-autosuggestions docker sudo web-search copyfile jsontools)" >> ~/.zshrc &&
+sed -i '/^plugins=(git)$/c\plugins=(git z zsh-syntax-highlighting zsh-autosuggestions docker sudo web-search copyfile jsontools)' ~/.zshrc && source ~/.zshrc
 ```
 
 ## [Opcional] Descargar las fuentes Meslo Nerd Font
