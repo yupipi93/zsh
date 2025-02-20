@@ -33,7 +33,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 ## Configurar los plugins en .zshrc
 ```bash
-sed -i '/^plugins=(git)$/c\plugins=(git z zsh-syntax-highlighting zsh-autosuggestions docker sudo web-search copyfile jsontools)' ~/.zshrc && source ~/.zshrc
+sed -i '/^plugins=(git)$/c\plugins=(git z zsh-syntax-highlighting zsh-autosuggestions docker sudo web-search gcloud)' ~/.zshrc && source ~/.zshrc
 ```
 
 ## [Opcional] Descargar las fuentes Meslo Nerd Font
