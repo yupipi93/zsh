@@ -64,6 +64,14 @@ source ~/.zshrc
 ```bash
 p10k configure
 ```
+
+## Add Aliases
+```bash
+#bat
+export PATH="/home/sergioconejero/.local/bin/bat:$PATH"
+alias bat='batcat'
+```
+
 ### Nota: Este comando aplica los cambios realizados en .zshrc sin necesidad de reiniciar la terminal.
 
 # Recordatorio: Asegúrate de tener una conexión a internet activa y permisos de administrador para ejecutar estos comandos.
